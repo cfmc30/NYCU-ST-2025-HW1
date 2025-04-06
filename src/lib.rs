@@ -1,8 +1,12 @@
 pub struct Calc;
 
 impl Calc {
-    pub fn add(&self, left: u64, right: u64) -> u64 {
+    pub fn add(&self, left: i64, right: i64) -> i64 {
         left + right
+    }
+
+    pub fn sub(&self, left: i64, right: i64) -> i64 {
+        left - right
     }
 }
 
