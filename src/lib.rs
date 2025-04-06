@@ -42,4 +42,20 @@ mod tests {
         assert_eq!(calc.mul(3, 2), 6);
         assert_eq!(calc.mul(3, -2), -6);
     }
+
+    #[test]
+    fn test_div() {
+        let calc = Calc;
+        assert_eq!(calc.div(10, 2), 5);
+        assert_eq!(calc.div(3, 2), 1);
+        assert_eq!(calc.div(0, 1), 0);
+        assert_eq!(calc.div(9, 3), 3);
+        assert_eq!(calc.div(10, -2), -5);
+    }
+    
+    #[should_panic]
+    #[test]
+    fn test_dev_zero() {
+        calc.div(10, 0);
+    }
 }
