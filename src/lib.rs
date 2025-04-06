@@ -8,6 +8,10 @@ impl Calc {
     pub fn sub(&self, left: i64, right: i64) -> i64 {
         left - right
     }
+
+    pub fn mul(&self, left: i64, right: i64) -> i64 {
+        left * right
+    }
 }
 
 #[cfg(test)]
