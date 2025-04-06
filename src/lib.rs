@@ -28,4 +28,14 @@ mod tests {
         assert_eq!(calc.sub(2, 3), -1);
         assert_eq!(calc.sub(2, 2), 0);
     }
+
+    #[test]
+    fn test_mul() {
+        let calc = Calc;
+        assert_eq!(calc.mul(0, 0), 0);
+        assert_eq!(calc.mul(1, 0), 0);
+        assert_eq!(calc.mul(0, 1), 0);
+        assert_eq!(calc.mul(3, 2), 6);
+        assert_eq!(calc.mul(3, -2), -6);
+    }
 }
