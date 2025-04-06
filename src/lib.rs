@@ -12,6 +12,10 @@ impl Calc {
     pub fn mul(&self, left: i64, right: i64) -> i64 {
         left * right
     }
+
+    pub fn div(&self, left: i64, right: i64) -> i64 {
+        left / right
+    }
 }
 
 #[cfg(test)]
@@ -56,6 +60,7 @@ mod tests {
     #[should_panic]
     #[test]
     fn test_dev_zero() {
+        let calc = Calc;
         calc.div(10, 0);
     }
 }
