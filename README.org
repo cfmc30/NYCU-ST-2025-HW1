@@ -1,0 +1,31 @@
+#+TITLE: Practice TDD by adding functions to Calc Report
+#+AUTHOR: cfmc30
+* GitHub Repo
+[[https://github.com/cfmc30/NYCU-ST-2025-HW1]]
+
+* Development Process
+- commit =b9d7976=
+
+  Add initial test.
+- commit =f29b908=
+
+  Add a new test to test function =sub=.
+- commit =74e2e0d=
+
+  Complete =sub= function to pass test.
+- commit =bef29e7=
+
+  Add a new test to test function =mul=.
+- commit =d8d4879=
+
+  Complete =mul= function.
+- commit =58f6c82=
+
+  Add two test for div, one of them is normal test.
+  Another is to test divided by zero, which is expected to =panic!()=.
+- commit =5fc0839=
+
+  Complete =div= function and =panic!()= at expected condition.
+* Printouts of all tests
+[[./img/test_success.png]]
+
